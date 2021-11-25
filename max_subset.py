@@ -10,7 +10,6 @@ import math
 
 def PatricksMaxSubset(arr):
     
-    
     total = 0
     max_ = - math.inf
     max__ = 0
@@ -23,7 +22,6 @@ def PatricksMaxSubset(arr):
         max_ = max(max_, total)
         max__ = max(max__, total - current_low)
         current_low = min(current_low, total)
-        
         
     if max_element < 0:
         return max_element
